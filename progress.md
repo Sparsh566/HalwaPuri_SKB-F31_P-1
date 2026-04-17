@@ -143,12 +143,10 @@
 
 ## Next Immediate Tasks
 
-- Complete Phase 3 (Data Validation Engine)
 - Complete Phase 4 (Analytics & Reporting)
 - Integrate Harsh & Atharva's UI code with Jiya's backend
 - Seed the `emission_factors` and `organizations` tables in Supabase
 - Build Server Actions bridging the frontend forms to the `emissions.ts` calculation service
-- Develop the Dashboard UI components mapped to our backend APIs
 - Connect the supplier portal to the live backend endpoint and validate file handling
 - Reconcile older API documentation with the newer supplier submission contract
 - Add backend-backed test coverage for supplier submission and issue workflows
@@ -175,9 +173,9 @@
 - [x] Seeded demo data created (1000+ records)
 - [x] UI API tester built
 - [x] Supplier submission portal (Harsh + Jiya)
-- [ ] Real emission calculations (Sahiti)
-- [ ] Dashboard charts with live data (Sparsh + Jiya)
-- [ ] Governance issue board (Sparsh)
+- [x] Real emission calculations (Sahiti)
+- [x] Dashboard charts with live data (Sparsh + Jiya)
+- [x] Governance issue board (Sparsh)
 - [ ] Final UI demo built
 - [ ] Report output built
 - [ ] AI smart summary panel
@@ -207,6 +205,8 @@
 - `2026-04-17 23:55 IST` — Backend Phase 2 & 3 complete: JWT middleware, Issues API, RBAC guard
 - `2026-04-17 23:55 IST` — Backend TypeScript: 0 errors. Server live at `localhost:5000`
 - `2026-04-17 23:58 IST` — End-to-end login verified: JWT returned, facilities endpoint authenticated
+- `2026-04-18 01:25 IST` — Layered Integration Merge completed: All developer branches synced, pulled, and merged to `main`.
+- `2026-04-18 01:30 IST` — Phase 3 finalized: Live DB aggregations running on Dashboard Line/Pie charts (`recharts`), global toast middleware via global events.
 
 ---
 
