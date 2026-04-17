@@ -11,12 +11,14 @@ This document tracks the cleaned and current project direction.
 - Created and aligned the main project docs around CarbonLens
 - Cleaned conflicting documentation that had pushed OCR-heavy and oversized MVP scope
 - Updated README, idea, CRD, PRD, architecture, task plan, and pitch notes for one consistent story
+- **Phase 1 Backend Execution:** Implemented `schema.prisma` with robust base data seeding via `seed.ts` (1000+ records). Express server scaffolding and Master Data CRUD APIs established.
+- **Phase 2 Supplier Portal Execution:** Deployed secure JWT-based supplier invite endpoints and an external `multer` form-data endpoint strictly verifying, parsing, and storing Scope 3 metrics and attached evidence documents.
 
 ## Current Status
 
-- Documentation is aligned
-- Product direction is stable
-- Ready for implementation planning or scaffolding
+- **Implementation Phase Active**
+- Phase 1 & 2 Backend APIs constructed, seeded, and tested via web UI.
+- Moving on to Phase 3 (Validation Engine & UI Integration).
 
 ## Removed or Simplified
 
@@ -29,11 +31,9 @@ This document tracks the cleaned and current project direction.
 
 1. Finalize the canonical tech stack in docs
 2. Create implementation scaffolding
-3. Seed demo data
-4. Build core flows in this order:
-   - auth
-   - data entry/upload
-   - calculation engine
+3. Complete the calculation and validation engines (Phase 3)
+4. Integrate the UI logic against the deployed backend
+5. Build dashboard & reporting layers
    - dashboard
    - governance
    - report summary
