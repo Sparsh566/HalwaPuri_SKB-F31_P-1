@@ -42,7 +42,7 @@ The problem can be broken into five parts:
 
 ## Product Goal
 
-Create a hackathon-ready MVP called `CarbonLens` that acts as a single source of truth for ESG and GHG data for a manufacturing SME.
+Create a hackathon-ready MVP called `CarbonLens` that acts as a smart ESG control tower and single source of truth for ESG and GHG data for a manufacturing SME.
 
 ## Functional Goals
 
@@ -52,6 +52,7 @@ Create a hackathon-ready MVP called `CarbonLens` that acts as a single source of
 - Provide dashboard-level emissions visibility
 - Assign issues to owners for governance
 - Generate a summary report for leadership or audit review
+- Add optional AI-smart summaries after deterministic outputs are ready
 
 ## Non-Functional Goals
 
@@ -60,6 +61,7 @@ Create a hackathon-ready MVP called `CarbonLens` that acts as a single source of
 - Demoable with seeded data and minimal dependencies
 - Scalable in concept, even if not enterprise-complete
 - Transparent and explainable in calculations
+- Modern and futuristic in presentation without making AI the core dependency
 
 ## In Scope
 
@@ -71,6 +73,7 @@ Create a hackathon-ready MVP called `CarbonLens` that acts as a single source of
 - Governance issue tracking
 - Audit-friendly summary reporting
 - Individual git branching separated among the 6-member team.
+- Optional AI-smart insights layered on top
 
 ## Out Of Scope
 
@@ -91,6 +94,7 @@ Create a hackathon-ready MVP called `CarbonLens` that acts as a single source of
 - Scope 3 engagement is represented meaningfully
 - Governance and accountability differentiate the product from a basic dashboard
 - The project feels achievable and credible beyond the hackathon
+- The product feels smart and modern without losing practicality
 
 ## Key Risks And Constraints
 
@@ -110,6 +114,7 @@ Needs:
 - Confidence in calculations
 - Quick report generation
 - Visibility into missing data
+- A simple way to monitor who still needs to fix or submit data
 
 ## Operations/Admin Team
 
@@ -117,6 +122,7 @@ Needs:
 - Simple upload and manual entry flow
 - Clear validation feedback
 - Fast issue resolution
+- Minimal complexity in day-to-day usage
 
 ## Supplier
 
@@ -124,6 +130,7 @@ Needs:
 - Minimal friction form
 - Clear asks for required data
 - Easy submission process
+- A limited and realistic data request rather than a huge compliance burden
 
 ## Leadership/Board Reviewer
 
@@ -132,3 +139,4 @@ Needs:
 - Top emissions hotspots
 - Risks, trends, and accountability
 - Confidence that data is reliable enough for decisions
+- A product experience that feels modern, concise, and decision-friendly
