@@ -33,6 +33,29 @@ This document tracks completed work per team member with timestamps.
 
 ---
 
+## Jiya — Analytics API
+
+### Phase 1 ✅ `2026-04-17`
+
+- Implemented `schema.prisma` with robust base data seeding via `seed.ts` (1000+ records)
+- Express server scaffolding and Master Data CRUD APIs established
+- `seed.ts` — bulk 1000 randomized Scope 3 validation records spanning 6 months
+- System CRUD APIs: `GET/POST /api/organizations`, `GET/POST /api/facilities`
+
+### Phase 2 ✅ `2026-04-17`
+
+- Deployed secure JWT-based supplier invite endpoints
+- External `multer` form-data endpoint strictly verifying, parsing, and storing Scope 3 metrics and attached evidence documents
+- `POST /api/supplier/submit` — external supplier portal with hash-token auth
+- Unique hash generation for unauthenticated supplier URLs
+
+### Phase 3: Pending
+
+- Optimized `GROUP BY` queries for `/api/dashboard/summary` and `/api/dashboard/trends`
+- Replace stub dashboard routes with real aggregation logic
+
+---
+
 ## Atharva — Frontend
 
 ### Phase 1 ✅ `2026-04-17 ~21:30 IST`
@@ -150,24 +173,6 @@ This document tracks completed work per team member with timestamps.
 
 - Recharts Line graph and Donut chart wired to `GET /api/dashboard/summary`
 - Wire metric cards to live API data (replace `—` placeholders)
-
----
-
-## Jiya — Analytics API
-
-### Status: Not started
-
-**Assigned tasks (Phase 1):**
-- `seed.ts` — bulk 1000 randomized Scope 3 validation records spanning 6 months
-- System CRUD APIs: `GET/POST /api/organizations`, `GET/POST /api/facilities`
-
-**Assigned tasks (Phase 2):**
-- `POST /api/supplier/submit` — external supplier portal with hash-token auth
-- Unique hash generation for unauthenticated supplier URLs
-
-**Assigned tasks (Phase 3):**
-- Optimized `GROUP BY` queries for `/api/dashboard/summary` and `/api/dashboard/trends`
-- Replace stub dashboard routes with real aggregation logic
 
 ---
 

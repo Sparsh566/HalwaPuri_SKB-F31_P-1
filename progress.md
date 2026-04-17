@@ -2,7 +2,7 @@
 
 ## Current Status
 
-**Implementation in progress.** Frontend Phase 1 & 2 complete. Backend Phase 1 & 2 complete. Both servers running and tested end-to-end.
+**Implementation in progress.** Frontend Phase 1 & 2 complete. Backend Phase 1 & 2 complete. Jiya Phase 1 & 2 Backend APIs constructed, seeded, and tested. Both servers running and tested end-to-end.
 
 ---
 
@@ -38,6 +38,16 @@
 - Designed and executed `schema.sql` establishing 7 core relational tables
 - Implemented Row-Level Security (RLS) and Webhook Triggers for automated governance
 - Built `src/lib/services/emissions.ts` core Calculation Engine for Scope 1, 2, and CSV batch processing.
+
+### Jiya — Backend Phase 1
+- **Phase 1 Backend Core:** Prisma Schema, Data Seeding, Org/Facility CRUD APIs
+- Implemented `schema.prisma` with robust base data seeding via `seed.ts` (1000+ records)
+- Express server scaffolding and Master Data CRUD APIs established
+
+### Jiya — Backend Phase 2
+- **Phase 2 Supplier Portal:** JWT Invites, external Multer file submission API, Visual Test UI
+- Deployed secure JWT-based supplier invite endpoints
+- External `multer` form-data endpoint for Scope 3 metrics and evidence documents
 
 ### Atharva — Frontend Phase 1 (completed `2026-04-17 ~21:30 IST`)
 - Vite + React + TypeScript scaffolding
@@ -100,7 +110,7 @@
 ## In Progress
 
 - Sahiti — EmissionEngine real calculation logic (`processBatch`, `calculateSingle`)
-- Jiya — Seed bulk Scope 3 records (1000 rows), optimized GROUP BY dashboard queries, supplier hash-token flow
+- Jiya — Phase 3 Validation Engine & Analytics
 - Sparsh — Dashboard Recharts integration (metric cards wired to `/api/dashboard/summary`)
 - Harsh — Governance review data grid, supplier submission UI, global Axios toast interceptor
 
@@ -123,6 +133,17 @@
 
 ---
 
+## Next Immediate Tasks
+
+- Complete Phase 3 (Data Validation Engine)
+- Complete Phase 4 (Analytics & Reporting)
+- Integrate Harsh & Atharva's UI code with Jiya's backend
+- Seed the `emission_factors` and `organizations` tables in Supabase
+- Build Server Actions bridging the frontend forms to the `emissions.ts` calculation service
+- Develop the Dashboard UI components mapped to our backend APIs
+
+---
+
 ## Demo Readiness Checklist
 
 - [x] Problem and solution story defined
@@ -139,10 +160,14 @@
 - [x] Database seeded with demo users and emission factors
 - [x] Manual data entry form built and wired
 - [x] File upload UI built and wired
+- [x] Implementation started
+- [x] Seeded demo data created (1000+ records)
+- [x] UI API tester built
 - [ ] Real emission calculations (Sahiti)
 - [ ] Dashboard charts with live data (Sparsh + Jiya)
 - [ ] Governance issue board (Sparsh)
 - [ ] Supplier submission portal (Harsh + Jiya)
+- [ ] Final UI demo built
 - [ ] Report output built
 - [ ] AI smart summary panel
 
@@ -171,14 +196,6 @@
 - `2026-04-17 23:55 IST` — Backend Phase 2 & 3 complete: JWT middleware, Issues API, RBAC guard
 - `2026-04-17 23:55 IST` — Backend TypeScript: 0 errors. Server live at `localhost:5000`
 - `2026-04-17 23:58 IST` — End-to-end login verified: JWT returned, facilities endpoint authenticated
-
----
-
-## Next Immediate Tasks
-
-- Seed the `emission_factors` and `organizations` tables in Supabase
-- Build Server Actions bridging the frontend forms to the `emissions.ts` calculation service
-- Develop the Dashboard UI components mapped to our backend APIs
 
 ---
 
